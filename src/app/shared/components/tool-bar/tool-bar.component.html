@@ -1,0 +1,10 @@
+<p class="menu">
+    <mat-toolbar >
+        <span class="pronombre">Oe <span class="name">Lioo</span></span>
+        <span class="example-spacer"></span>
+        
+        <a *ngFor="let menu of menuList" [routerLink]="menu.path">
+            {{ menu.title }}
+        </a>
+    </mat-toolbar>
+</p>

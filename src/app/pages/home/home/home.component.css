@@ -1,0 +1,199 @@
+.title {
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 8px;
+}
+
+.myname,
+.saludo {
+    color: var(--primary-color);
+}
+
+.information, .skills, .soft-skills {
+    width: 100%;
+    padding: 20px 10%;
+    margin: 0;
+}
+
+.information {
+    gap: 20px;
+    flex-direction: row;
+}
+
+.data {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+.presentation {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.description span {
+    color: var(--primary-color);
+}
+.image img {
+    width: 400px;
+}
+
+/* btns contacts */
+/* From Uiverse.io by vinodjangid07 */
+/* From Uiverse.io by akshayjalluri6 */
+.container {
+    display: flex;
+    padding: 0;
+}
+
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    background: -webkit-linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    background: linear-gradient(45deg,
+            #f09433 0%,
+            #e6683c 25%,
+            #dc2743 50%,
+            #cc2366 75%,
+            #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.x {
+    background-color: black;
+}
+
+.linkedin {
+    background-color: #0a66c2;
+}
+
+.mail {
+    background-color: aliceblue;
+    color: black;
+}
+
+.Btn:hover {
+    width: 110px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+.Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.svgIcon {
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.mail .svgIcon path {
+    fill: black;
+}
+
+.mail .text {
+    color: black;
+}
+
+/* Skills */
+
+.skills .title {    
+    text-align: center;
+    padding: 25px 0;
+}
+
+.list-skills {
+    padding: 50px 0;
+    margin: 0 20%;
+}
+
+.skills .skill {
+    background-color: #1f1e1ebe;
+    width: 150px;
+    height: 150px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.name-logo {
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 0;
+}
+
+.skill:hover .svgIconSkills path {
+    fill: var(--primary-color);
+    transition-duration: 0.3s;
+}
+
+/* soft skills */
+.soft-skills .title {    
+    text-align: center;
+    padding: 25px 0;
+}
+
+.list-soft {
+    padding: 50px 0;
+    margin: 0 5%;
+}
