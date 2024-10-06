@@ -1,0 +1,34 @@
+<swiper-container   class="mySwiper2"
+   navigation="true" 
+   loop="true" 
+   watch-slides-progress="true"
+   free-mode="true"
+   slides-per-view="3" 
+   space-between="10" 
+   [breakpoints]="breakpoints">
+   <swiper-slide *ngFor="let pro of lista">
+      <div class="card border-warning h-100">
+         <img [src]=" pro.image.length !== 0 ?  './assets/projects/' + pro.image[0] : 'assets/projects/01.jpeg'"
+         class="card-img-top" alt="...">
+         <div class="card-body">
+            <div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
+               <button type="button" class="btn text-primary" *ngFor="let platform of pro.platforms">{{ platform
+                  }}</button>
+            </div>
+            <h5 class="card-title">{{ pro.name }}</h5>
+            <ul class="list-group list-group-flush">
+               <li class="card-text list-group-item border-warning-subtle description"
+                  *ngFor="let desc of pro.description">{{ desc }}</li>
+            </ul>
+            <p class="">Tecnologías</p>
+            <p class="tech fs-6">{{ pro.technologies.join(' | ') }}</p>
+         </div>
+         <div class="">
+            <a type="button" class="btn btn-outline-warning bottom-0 end-0" *ngIf="pro.link.length != 0" [href]="pro.link[0]" target="_blank">Github</a>
+         </div>
+         <div class="card-footer">
+            <small class="text-body-light">Update: <span> {{ pro.updatedAt }}</span></small>
+         </div>
+      </div>   
+   </swiper-slide>
+ </swiper-container>

@@ -11,7 +11,8 @@
 
 .information,
 .skills,
-.soft-skills {
+.soft-skills,
+.list-project {
     width: 100%;
     padding: 20px 10%;
     margin: 0;
@@ -242,6 +243,15 @@
 
 /* List projects */
 
+.list-project .title {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.projects {
+    padding: 2% 0;
+    margin: 0 5%;
+}
 
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {

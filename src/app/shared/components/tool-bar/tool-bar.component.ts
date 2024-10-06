@@ -9,6 +9,6 @@ export class ToolBarComponent {
 
   public menuList = [
     { title: 'Home', path: '/home' },
-    { title: 'Projects', path: '/projects' }
+    // { title: 'Projects', path: '/projects' }
   ]
 }

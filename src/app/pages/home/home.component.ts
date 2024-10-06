@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProjectsService } from 'src/app/shared/services/projects.service';
 
 @Component({
   selector: 'app-home',
@@ -7,7 +8,15 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  constructor(
+    private projectService: ProjectsService
+  ){}
   openLink(url: string) {
     window.open(url, '_blank');
+  }
+
+  getListProject() {
+    const list = this.projectService.getProjects;
+    return list;
   }
 }

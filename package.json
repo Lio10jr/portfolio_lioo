@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:deploy": "ng build --output-path=dist --base-href /portfolio_lioo/",
+    "deploy:dist": "npx angular-cli-ghpages --dir=dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -24,6 +26,7 @@
     "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "rxjs": "~7.8.0",
+    "swiper": "^11.1.14",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },
