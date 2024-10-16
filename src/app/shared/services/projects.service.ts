@@ -50,16 +50,20 @@ export class ProjectsService {
       ],
       platforms: ["Mobile"],
       company: "",
-      image: [],
+      image: [
+        'glish_note/logo_large_background.webp'
+      ],
       technologies: [
         "Dart",
         "Flutter",
         "Firebase: Authentication, Realtime database",
       ],
-      link: [],
+      link: [
+        
+      ],
       priority: true,
       implemented: false,
-      updatedAt: "01/10/2024",
+      updatedAt: "16/10/2024",
     },
     {
       name: "Football Championship Management System for UTMACH",

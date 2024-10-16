@@ -9,7 +9,7 @@
    <swiper-slide *ngFor="let pro of lista">
       <div class="card border-warning h-100">
          <img [src]=" pro.image.length !== 0 ?  './assets/projects/' + pro.image[0] : 'assets/projects/01.jpeg'"
-         class="card-img-top" alt="...">
+         class="card-img-top" alt="..." style="max-width: 100%; height: auto;"  >
          <div class="card-body">
             <div class="btn-group btn-group-sm" role="group" aria-label="Basic outlined example">
                <button type="button" class="btn text-primary" *ngFor="let platform of pro.platforms">{{ platform
