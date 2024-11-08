@@ -1,37 +1,159 @@
-swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+.container-img {
+  width: 100%;
+  max-height: 80vh;
+  height: 80vh;
+  --color: #ebcf683e;
+  /* background-color: #191a1a; */
+  background-image: linear-gradient(180deg,
+      transparent 24%,
+      var(--color) 25%,
+      var(--color) 26%,
+      transparent 27%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent),
+    linear-gradient(45deg,
+      transparent 24%,
+      var(--color) 35%,
+      var(--color) 26%,
+      transparent 17%,
+      transparent 74%,
+      var(--color) 75%,
+      var(--color) 76%,
+      transparent 77%,
+      transparent);
+  background-size: 55px 55px;
+}
+
+.imgs {
+  width: 100%;
+  height: 5%;
+  /* background-color: var(--bg-color-page); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+}
+
+.img img {
+  width: 100%;
+  height: 100%;
+}
+
+.list-group {
+  width: 75%;
 }
 
 .card {
-    background-color: #1f1e1ebe;
-    color: #fff;
-    text-align: center;
-    max-width: 300px;
+  background-color: #1f1e1ebe;
+  color: #fff;
+  text-align: center;
+  max-width: 300px;
 }
 
 .description {
-    background-color: transparent;
-    color: #d8e4e4;
-    text-align: start;
+  background-color: transparent;
+  color: #d8e4e4;
+  text-align: start;
+  font-weight: bold;
 }
 
 .tech {
-    color: #9ea7a7;
+  color: #9ea7a7;
 }
 
-.mySwiper2 {
-    height: auto;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px 0;
-    swiper-slide {
-      opacity: 0.6;
-    }
-    .swiper-slide-thumb-active {
-      opacity: 1;
-    }
+/* From Uiverse.io by vinodjangid07 */
+.Btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .4s;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(31, 31, 31);
+  overflow: hidden;
+}
+
+.svgIcon {
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: #fff;
+}
+
+.text {
+  position: absolute;
+  color: #fff;
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: .4s;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: .4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+@media (max-width: 1150px) {
+  .container-img {
+    max-height: 85vh;
+    height: 85vh;
   }
-  
+
+  .img {
+    width: 135px;
+    height: 85px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-img {
+    max-height: 95vh;
+    height: 95vh;
+  }
+
+  .img {
+    width: 120px;
+    height: 70px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-img {
+    max-height: 100vh;
+    height: 100vh;
+  }
+
+  .img {
+    width: 105px;
+    height: 55px;
+    padding: 5px;
+  }
+}

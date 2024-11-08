@@ -51,7 +51,10 @@ export class ProjectsService {
       platforms: ["Mobile"],
       company: "",
       image: [
-        'glish_note/logo_large_background.webp'
+        'glish_note/logo_large_background.webp',
+        'glish_note/01.jpg',
+        'glish_note/02.jpg',
+        'glish_note/03.jpg'
       ],
       technologies: [
         "Dart",

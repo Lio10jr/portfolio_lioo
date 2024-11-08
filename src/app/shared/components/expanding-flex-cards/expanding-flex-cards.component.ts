@@ -1,8 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { ProjectEntity } from '../../entity/project.entity';
-import { register } from 'swiper/element/bundle';
-// register Swiper custom elements
-register();
 
 @Component({
   selector: 'app-expanding-flex-cards',
@@ -14,7 +11,7 @@ export class ExpandingFlexCardsComponent {
   @Input() lista!: ProjectEntity[];
 
   agruparProyectos(): any[] {
-    const cantidadPorSlide = 2; // Cantidad de cards por slide
+    const cantidadPorSlide = 1; // Cantidad de cards por slide
     const proyectosAgrupados = [];
 
     for (let i = 0; i < this.lista.length; i += cantidadPorSlide) {

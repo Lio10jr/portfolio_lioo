@@ -13,7 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ExpandingFlexCardsComponent } from './shared/components/expanding-flex-cards/expanding-flex-cards.component';
-import Swiper from 'swiper';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -32,9 +32,9 @@ import Swiper from 'swiper';
     MatButtonModule,
     MatIconModule,
     MatGridListModule,
+    CommonModule
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
