@@ -1,7 +1,9 @@
+
+
 .container-img {
   width: 100%;
-  max-height: 80vh;
-  height: 80vh;
+  max-height: 700px;
+  height: 700px;
   --color: #ebcf683e;
   /* background-color: #191a1a; */
   background-image: linear-gradient(180deg,
@@ -119,41 +121,35 @@
   transition-duration: .3s;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1500px) {
   .container-img {
-    max-height: 85vh;
-    height: 85vh;
-  }
-
-  .img {
-    width: 135px;
-    height: 85px;
-    padding: 5px;
+    max-height: 750px;
+    height: 750px;
   }
 }
 
-@media (max-width: 768px) {
-  .container-img {
-    max-height: 95vh;
-    height: 95vh;
-  }
+@media (max-width: 900px) {
 
   .img {
     width: 120px;
     height: 70px;
     padding: 5px;
   }
+
+}
+
+@media (max-width: 680px) {
+  .container-img {
+    max-height: 820px;
+    height: 820px;
+  }
 }
 
 @media (max-width: 480px) {
   .container-img {
-    max-height: 100vh;
-    height: 100vh;
+    max-height: 1000px;
+    height: 1000px;
+    font-size: 7px;
   }
 
-  .img {
-    width: 105px;
-    height: 55px;
-    padding: 5px;
-  }
 }

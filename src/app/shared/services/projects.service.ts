@@ -22,7 +22,12 @@ export class ProjectsService {
       ],
       platforms: ["Web", "Mobile"],
       company: "Junta Provincial de El Oro de la ciudad de Machala",
-      image: [],
+      image: [
+        'blood/01.webp',
+        'blood/02.webp',
+        'blood/03.webp',
+        'blood/04.jpg',
+      ],
       technologies: [
         "TypeScript",
         "JavaScript",
@@ -33,7 +38,9 @@ export class ProjectsService {
         "Firebase",
         "Google Maps API",
       ],
-      link: [],
+      linkDemo: "",
+      linkGit: [
+      ],
       priority: true,
       implemented: false,
       updatedAt: "01/10/2024",
@@ -51,7 +58,6 @@ export class ProjectsService {
       platforms: ["Mobile"],
       company: "",
       image: [
-        'glish_note/logo_large_background.webp',
         'glish_note/01.jpg',
         'glish_note/02.jpg',
         'glish_note/03.jpg'
@@ -61,8 +67,9 @@ export class ProjectsService {
         "Flutter",
         "Firebase: Authentication, Realtime database",
       ],
-      link: [
-        
+      linkDemo: "",
+      linkGit: [
+        { name: "Proyecto", link: "" }
       ],
       priority: true,
       implemented: false,
@@ -80,7 +87,13 @@ export class ProjectsService {
       ],
       platforms: ["Web", "Mobile"],
       company: "Universidad Tecnica de Machala",
-      image: [],
+      image: [
+        'campeonato-utmach/01.png',
+        'campeonato-utmach/02.png',
+        'campeonato-utmach/03.png',
+        'campeonato-utmach/04.png',
+        'campeonato-utmach/05.png',
+      ],
       technologies: [
         "Php",
         "TypeScript",
@@ -90,10 +103,11 @@ export class ProjectsService {
         "Angular",
         "Ionic",
       ],
-      link: [
-        "https://github.com/Lio10jr/juegostic_api",
-        "https://github.com/Lio10jr/juegos-ti-frontend",
-        "https://github.com/Lio10jr/juegostic_mv"
+      linkDemo: "",
+      linkGit: [
+        { name: "Api", link: "https://github.com/Lio10jr/juegostic_api"},
+        { name: "Web", link: "https://github.com/Lio10jr/juegos-ti-frontend"},
+        { name: "Móvil", link: "https://github.com/Lio10jr/juegostic_mv"}
       ],
       priority: true,
       implemented: false,
@@ -110,14 +124,23 @@ export class ProjectsService {
       ],
       platforms: ["Web"],
       company: "",
-      image: [],
+      image: [
+        'compania-buses/01.png',
+        'compania-buses/02.png',
+        'compania-buses/03.png',
+        'compania-buses/04.png',
+        'compania-buses/05.png',
+      ],
       technologies: [
         "TypeScript",
         "Angular",
         "Html5",
         "CSS3",
       ],
-      link: ["https://github.com/Lio10jr/Compania-de-Buses"],
+      linkDemo: "",
+      linkGit: [
+        { name: "", link: "https://github.com/Lio10jr/Compania-de-Buses" }
+      ],
       priority: false,
       implemented: false,
       updatedAt: "01/10/2024",
@@ -134,14 +157,19 @@ export class ProjectsService {
       ],
       platforms: ["Windows"],
       company: "",
-      image: [],
+      image: [
+        'control-pacientes/01.jpg'
+      ],
       technologies: [
         "C#",
         ".NET Framework",
         "SQL Server",
         "WPF"
       ],
-      link: ["https://github.com/Lio10jr/PatientControl"],
+      linkDemo: "",
+      linkGit: [
+        { name: "", link: "https://github.com/Lio10jr/PatientControl"}
+      ],
       priority: true,
       implemented: false,
       updatedAt: "01/10/2024",
@@ -168,7 +196,10 @@ export class ProjectsService {
         "Express",
         "Firebase",
       ],
-      link: ["https://github.com/Lio10jr/Recicladora"],
+      linkDemo: "",
+      linkGit: [
+        { name: "", link: "https://github.com/Lio10jr/Recicladora"}
+      ],
       priority: false,
       implemented: false,
       updatedAt: "01/10/2024"
@@ -190,192 +221,15 @@ export class ProjectsService {
       technologies: [
         "Java",
       ],
-      link: ["https://github.com/Lio10jr/Metodos-Numericos-Calculator"],
+      linkDemo: "",
+      linkGit: [
+        { name: "", link: "https://github.com/Lio10jr/Metodos-Numericos-Calculator"}
+      ],
       priority: false,
       implemented: false,
       updatedAt: "01/10/2024"
     }
   ];
-  /* private listProjects: ProjectEntity[] = [
-    {
-      name: "Sistema de gestión de campañas y donación de sangre",
-      description: [
-        "Autenticación y autorización",
-        "Gestión de usuarios.",
-        "Gestión de campañas.",
-        "Gestión de donantes.",
-        "Gestión de notificaciones.",
-        "Vista de campañas de donación.",
-      ],
-      platforms: [ "Web", "Móvil" ],
-      company: "Junta Provincial de El Oro de la ciudad de Machala",
-      image: [],
-      technologies:[
-        "TypeScript",
-        "JavaScript",
-        "Node.Js",
-        "Express",
-        "Angular",
-        "Ionic",
-        "Firebase",
-        "Google Maps API",
-      ],
-      link: [],
-      priority: true,
-      implemented: false,
-      updatedAt: "01/10/2024",
-    },
-    {
-      name: "Glish Note",
-      description: [
-        "Autenticación",
-        "Contenido básico de gramática.",
-        "Traductor integrado.",
-        "Lista de 400 verbos.",
-        "Gestión de notas personales.",
-        "Gestión de vocabulario personal."
-      ],
-      platforms: [ "Móvil" ],
-      company: "",
-      image: [],
-      technologies: [
-        "Dart",
-        "Flutter",
-        "Firebase: Authentication, Realtime database",
-      ],
-      link: [],
-      priority: true,
-      implemented: false,
-      updatedAt: "01/10/2024",
-    },
-    {
-      name: "Sistema de gestion de campeonato de fútbol para la UTMACH",
-      description: [
-        "Autenticación y autorización",
-        "Gestión de campeonatos",
-        "Gestión de equipos",
-        "Gestión de participantes",
-        "Gestión de tabla de posiciones",
-        "Vista publica (web y móvil).",
-      ],
-      platforms: [ "Web", "Móvil" ],
-      company: "Universidad Tecnica de Machala",
-      image: [],
-      technologies:[
-        "Php",
-        "TypeScript",
-        "Laravel",
-        "Jwt",
-        "PostgreSQL",
-        "Angular",
-        "Ionic",
-      ],
-      link: [ 
-        "https://github.com/Lio10jr/juegostic_api",
-        "https://github.com/Lio10jr/juegos-ti-frontend",
-        "https://github.com/Lio10jr/juegostic_mv"
-      ],
-      priority: true,
-      implemented: false,
-      updatedAt: "01/10/2024"
-    },
-    {
-      name: "Compañia de buses",
-      description: [
-        "Gestión Choferes.",
-        "Gestión Buses.",
-        "Gestión Tripulación.",
-        "Gestión Viajes.",
-        "Gestión Reportes."
-      ],
-      platforms: [ "Web" ],
-      company: "",
-      image: [],
-      technologies:[
-        "TypeScript",
-        "Angular",
-        "Html5",
-        "CSS3",
-      ],
-      link: ["https://github.com/Lio10jr/Compania-de-Buses"],
-      priority: false,
-      implemented: false,
-      updatedAt: "01/10/2024",
-    },
-    {
-      name: "Control de Pacientes",
-      description: [
-        "Autenticación y roles de usuario",
-        "Gestión de Fichas Medicas",
-        "Gestión de Pacientes",
-        "Generar Recetas",
-        "Gestión de Medicamentos",
-        "Generación de Reportes"
-      ],
-      platforms: [ "Windows" ],
-      company: "",
-      image: [],
-      technologies: [
-        "C#",
-        ".NET Framework",
-        "SQL Server",
-        "WPF"
-      ],
-      link: ["https://github.com/Lio10jr/PatientControl"],
-      priority: true,
-      implemented: false,
-      updatedAt: "01/10/2024",
-    },
-    {
-      name: "Sistema para recicladora",
-      description: [
-        "Login y registro",
-        "Gestión de Reciclaje.",
-        "Gestión de Contenedores.",
-        "Gestión de Usuarios.",
-        "Gestión de Depositos.",
-        "Gestión de Productos.",
-        "Gestión de Ventas.",
-      ],
-      platforms: [ "Web", "Móvil" ],
-      company: "",
-      image: [],
-      technologies:[
-        "TypeScript",
-        "Angular",
-        "Ionic",
-        "NodeJS",
-        "Express",
-        "Firebase",
-      ],
-      link: ["https://github.com/Lio10jr/Recicladora"],
-      priority: false,
-      implemented: false,
-      updatedAt: "01/10/2024"
-    },
-    {
-      name: "Calculadora de métodos numéricos",
-      description: [
-        "Algoritmos de bairstown",
-        "Algoritmos de bisección.",
-        "Algoritmos de derivadas.",
-        "Algoritmos de falsa posición.",
-        "Algoritmos de Regresiónes.",
-        "Algoritmos de serie de taylor.",
-        "Graficación de funciones.",
-      ],
-      platforms: [ "Interfaz gráfica" ],
-      company: "",
-      image: [],
-      technologies:[
-        "Java",
-      ],
-      link: ["https://github.com/Lio10jr/Metodos-Numericos-Calculator"],
-      priority: false,
-      implemented: false,
-      updatedAt: "01/10/2024"
-    }
-  ]; */
 
   public get getProjects(): ProjectEntity[] {
     return this.listProjects;

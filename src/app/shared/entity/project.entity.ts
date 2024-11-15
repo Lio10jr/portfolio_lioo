@@ -6,7 +6,8 @@ export interface ProjectEntity {
     company: string;
     image: string[],
     technologies: string[];
-    link: string[]
+    linkDemo: string
+    linkGit: {name: string, link: string}[]
     priority: boolean;
     implemented: boolean;
     updatedAt: string;
