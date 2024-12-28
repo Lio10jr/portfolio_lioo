@@ -12,8 +12,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { ExpandingFlexCardsComponent } from './shared/components/expanding-flex-cards/expanding-flex-cards.component';
 import { CommonModule } from '@angular/common';
+import { CardComponent } from './shared/components/card/card.component';
 
 
 
@@ -22,7 +22,7 @@ import { CommonModule } from '@angular/common';
     AppComponent,
     HomeComponent,
     ToolBarComponent,
-    ExpandingFlexCardsComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,

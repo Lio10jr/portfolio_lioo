@@ -14,7 +14,13 @@
     gap: 20px;
     padding: 20px;
 
-}   
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    * {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
 
 @media (max-width: 1300px) {
     .container-section {

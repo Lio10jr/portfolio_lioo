@@ -11,14 +11,13 @@ export class ProjectsService {
 
   private listProjects: ProjectEntity[] = [
     {
-      name: "Campaign Management and Blood Donation System",
+      name: "Gestión de campañas y donaciones de sangre",
       description: [
-        "Authentication and authorization",
-        "User management.",
-        "Campaign management.",
-        "Donor management.",
-        "Notification management.",
-        "Donation campaign view.",
+        "Autenticación y Roles",
+        "Gestión de usuarios",
+        "Gestión de campañas",
+        "Gestión de donantes",
+        "Gestión de notificaciones",
       ],
       platforms: ["Web", "Mobile"],
       company: "Junta Provincial de El Oro de la ciudad de Machala",
@@ -46,14 +45,13 @@ export class ProjectsService {
       updatedAt: "01/10/2024",
     },
     {
-      name: "Glish Note",
+      name: "Mejora tu ingles con Glish Note",
       description: [
-        "Authentication",
-        "Basic grammar content.",
-        "Integrated translator.",
-        "List of 400 verbs.",
-        "Personal notes management.",
-        "Personal vocabulary management."
+        "Login y registro",
+        "Contenido gramático básico",
+        "Traductor de google integrado",
+        "400 verbos para aprender",
+        "Gestión de notas y vocabulario",
       ],
       platforms: ["Mobile"],
       company: "",
@@ -76,14 +74,13 @@ export class ProjectsService {
       updatedAt: "16/10/2024",
     },
     {
-      name: "Football Championship Management System for UTMACH",
+      name: "Gestión de campeonato de fútbol",
       description: [
-        "Authentication and authorization",
-        "Championship management",
-        "Team management",
-        "Participant management",
-        "Standings management",
-        "Public view (web and mobile).",
+        "Autenticación y roles",
+        "Gestion de campeonato",
+        "Vista pública web y móvil",
+        "Gestión de equipos, jugadores y más",
+        "Alertas via correo electrónico",
       ],
       platforms: ["Web", "Mobile"],
       company: "Universidad Tecnica de Machala",
@@ -105,22 +102,22 @@ export class ProjectsService {
       ],
       linkDemo: "",
       linkGit: [
-        { name: "Api", link: "https://github.com/Lio10jr/juegostic_api"},
-        { name: "Web", link: "https://github.com/Lio10jr/juegos-ti-frontend"},
-        { name: "Móvil", link: "https://github.com/Lio10jr/juegostic_mv"}
+        { name: "Api", link: "https://github.com/Lio10jr/juegostic_api" },
+        { name: "Web", link: "https://github.com/Lio10jr/juegos-ti-frontend" },
+        { name: "Móvil", link: "https://github.com/Lio10jr/juegostic_mv" }
       ],
       priority: true,
       implemented: false,
       updatedAt: "01/10/2024"
     },
     {
-      name: "Bus Company",
+      name: "Gestión de de viajes para buses",
       description: [
-        "Driver management.",
-        "Bus management.",
-        "Crew management.",
-        "Trip management.",
-        "Report management."
+        "Gestión de buses",
+        "Gestión de choferes",
+        "Gestión de tripulantes",
+        "Gestión de viajes",
+        "Reportes de viajes"
       ],
       platforms: ["Web"],
       company: "",
@@ -146,14 +143,13 @@ export class ProjectsService {
       updatedAt: "01/10/2024",
     },
     {
-      name: "Patient Control",
+      name: "Sistema de control de pacientes",
       description: [
-        "Authentication and user roles",
-        "Medical records management",
-        "Patient management",
-        "Generate prescriptions",
-        "Medication management",
-        "Report generation"
+        "Autenticación y roles",
+        "Gestión de recetas médicas",
+        "Gestión de paciente",
+        "Generación de recetas",
+        "Reportes con Crystal Reports"
       ],
       platforms: ["Windows"],
       company: "",
@@ -168,22 +164,20 @@ export class ProjectsService {
       ],
       linkDemo: "",
       linkGit: [
-        { name: "", link: "https://github.com/Lio10jr/PatientControl"}
+        { name: "", link: "https://github.com/Lio10jr/PatientControl" }
       ],
       priority: true,
       implemented: false,
       updatedAt: "01/10/2024",
     },
     {
-      name: "Recycling System",
+      name: "Sistema para recicladoras orgánicas",
       description: [
-        "Login and registration",
-        "Recycling management.",
-        "Container management.",
-        "User management.",
-        "Deposit management.",
-        "Product management.",
-        "Sales management.",
+        "Autenticación y roles de usuario",
+        "Gestión de reciclaje",
+        "Gestión de contenedores",
+        "Ventas de productos reciclables",
+        "Gestión web y móvil",
       ],
       platforms: ["Web", "Mobile"],
       company: "",
@@ -198,22 +192,20 @@ export class ProjectsService {
       ],
       linkDemo: "",
       linkGit: [
-        { name: "", link: "https://github.com/Lio10jr/Recicladora"}
+        { name: "", link: "https://github.com/Lio10jr/Recicladora" }
       ],
       priority: false,
       implemented: false,
       updatedAt: "01/10/2024"
     },
     {
-      name: "Numerical Methods Calculator",
+      name: "Calculadora de métodos numéricos",
       description: [
-        "Bairstow's algorithms",
-        "Bisection algorithms.",
-        "Derivative algorithms.",
-        "False position algorithms.",
-        "Regression algorithms.",
-        "Taylor series algorithms.",
-        "Function graphing.",
+        "Algoritmos de Bairstow y bisección",
+        "Algoritmos de derivadas y falsa posición.",
+        "Algoritmos de regresión.",
+        "Algoritmos de series de Taylor.",
+        "Gráficos de funciones.",
       ],
       platforms: ["Graphical interface"],
       company: "",
@@ -223,7 +215,7 @@ export class ProjectsService {
       ],
       linkDemo: "",
       linkGit: [
-        { name: "", link: "https://github.com/Lio10jr/Metodos-Numericos-Calculator"}
+        { name: "", link: "https://github.com/Lio10jr/Metodos-Numericos-Calculator" }
       ],
       priority: false,
       implemented: false,
