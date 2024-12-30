@@ -138,7 +138,7 @@ export class ProjectsService {
       linkGit: [
         { name: "", link: "https://github.com/Lio10jr/Compania-de-Buses" }
       ],
-      priority: false,
+      priority: true,
       implemented: false,
       updatedAt: "01/10/2024",
     },
@@ -166,7 +166,7 @@ export class ProjectsService {
       linkGit: [
         { name: "", link: "https://github.com/Lio10jr/PatientControl" }
       ],
-      priority: true,
+      priority: false,
       implemented: false,
       updatedAt: "01/10/2024",
     },
