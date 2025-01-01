@@ -180,7 +180,7 @@
 
     <!-- Skills -->
     <section class="w-full h-full">
-        <div class="flex flex-col md:flex-row justify-center items-center">
+        <div class="flex flex-col md:flex-row justify-center items-center m-1">
             <div class="px-3 rounded-lg w-full h-full flex flex-col flex-wrap order-2">
                 <div
                     class=" block max-w-sm p-6 bg-green-500 border border-green-500 rounded-lg shadow hover:bg-green-400 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
@@ -230,9 +230,9 @@
             </div>
             <div
                 class="px-3 w-full h-full md:flex-1 order-1 items-center justify-center md:start-start md:justify-start">
-                <div class="mt-5 md:mt-0">
+                <div class="mt-5 md:mt-0 w-full">
                     <h1
-                        class="mb-4 text-5xl text-center font-extrabold tracking-widest leading-none text-gray-900 md:text-6xl lg:text-7xl xl:text-9xl dark:text-white animate__bounceInRight">
+                        class="mb-4 text-4xl text-center font-extrabold tracking-widest leading-none text-gray-900 md:text-6xl lg:text-7xl xl:text-9xl dark:text-white animate__bounceInRight">
                         HABILIDADES</h1>
                     <div class="flex gap-2 justify-start items-start w-full pb-2 flex-row flex-wrap">
                         <div
@@ -355,7 +355,10 @@
     <!-- Principal projects -->
     <section class="w-full h-full">
 
-        <div class="md:flex w-full h-full">
+        <div class="px-3 md:flex w-full h-full">
+            <h1
+                    class="py-3 text-3xl text-center font-extrabold tracking-widest leading-none text-gray-900 md:text-3xl lg:text-4xl xl:text-5xl dark:text-white animate__bounceInRight">
+                    PROYECTOS</h1>
             <ul *ngIf="list != []"
                 class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
                 <li *ngFor="let item of this.list; index as i" [id]="item.name + '-tap'"
@@ -367,9 +370,6 @@
                         {{ item.name }}
                     </a>
                 </li>
-                <h1
-                        class="pt-3 text-3xl text-center font-extrabold tracking-widest leading-none text-gray-900 md:text-3xl lg:text-4xl xl:text-5xl dark:text-white animate__bounceInRight">
-                        PROYECTOS</h1>
             </ul>
             <ul *ngIf="list == []"
                 class="flex-column space-y space-y-4 text-sm font-medium text-gray-500 dark:text-gray-400 md:me-4 mb-4 md:mb-0">
@@ -460,17 +460,17 @@
             <div *ngIf="list != []"
                 class="p-6 bg-gray-50 text-medium text-gray-500 dark:text-gray-400 dark:bg-gray-800 rounded-lg w-full">
                 <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">{{ itemSelected.name }}</h3>
-                <div class="flex">
+                <div class=" w-full flex flex-col sm:flex-row">
 
-                    <div class="flex items-start gap-2.5">
+                    <div class="w-full flex items-start gap-2.5 order-2">
                         <div class="flex flex-col gap-1">
                             <div
-                                class="flex flex-col w-full max-w-[326px] leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
+                                class="w-full flex flex-col leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
 
                                 <p class="text-sm font-normal text-gray-900 dark:text-white">{{ itemSelected.company }}
                                 </p>
-                                <div class="grid gap-4 grid-cols-2 my-2.5">
-                                    <div class="group w-32 h-32 overflow-hidden relative"
+                                <div class="grid gap-4 grid-cols-2 my-2.5 place-items-center">
+                                    <div class="group w-36 h-36 overflow-hidden relative"
                                         *ngFor="let image of itemSelected.image; let i = index">
                                         <a [href]="image ? './assets/projects/' + image : './assets/projects/01.jpeg'"
                                             [ngClass]="'img-' + i"
@@ -512,7 +512,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-3">
+                    <div class="p-3 w-full order-1">
                         <ul class="list-group list-group-flush w-full">
                             <li class="card-text w-full list-group-item border-warning-subtle description bg-transparent"
                                 *ngFor="let desc of itemSelected.description">{{
