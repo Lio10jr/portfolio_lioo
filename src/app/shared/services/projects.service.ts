@@ -67,7 +67,7 @@ export class ProjectsService {
       ],
       linkDemo: "",
       linkGit: [
-        { name: "Proyecto", link: "" }
+        { name: "Proyecto", link: "https://github.com/Lio10jr/glish_note_app" }
       ],
       priority: true,
       implemented: false,
