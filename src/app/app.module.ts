@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './shared/components/card/card.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
 
 
 
@@ -23,6 +24,7 @@ import { CardComponent } from './shared/components/card/card.component';
     HomeComponent,
     ToolBarComponent,
     CardComponent,
+    PresentationComponent,
   ],
   imports: [
     BrowserModule,

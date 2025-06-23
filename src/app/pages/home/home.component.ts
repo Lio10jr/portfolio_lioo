@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { PresentationComponent } from 'src/app/components/presentation/presentation.component';
 import { ProjectEntity } from 'src/app/shared/entity/project.entity';
 import { ProjectsService } from 'src/app/shared/services/projects.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
   itemSelected: any;
@@ -20,10 +21,6 @@ export class HomeComponent implements OnInit {
     this.list = this.projectService.getProjects.filter( pro => pro.priority );
     this.itemSelected = this.list[0];
     this.selectedIndex = 0;
-  }
-
-  openLink(url: string) {
-    window.open(url, '_blank');
   }
 
   itemSelect(i: number) {
