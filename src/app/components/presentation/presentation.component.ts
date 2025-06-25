@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-presentation',
+  standalone: true,
   templateUrl: './presentation.component.html',
   styleUrls: ['./presentation.component.css'],
 })

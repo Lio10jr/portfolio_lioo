@@ -11,14 +11,28 @@ export class ProjectsService {
 
   private listProjects: ProjectEntity[] = [
     {
-      name: "Gestión de campañas y donaciones de sangre",
-      description: [
-        "Autenticación y Roles",
-        "Gestión de usuarios",
-        "Gestión de campañas",
-        "Gestión de donantes",
-        "Gestión de notificaciones",
+      name: "Juego de Bingo en linea",
+      description: "La aplicación permite autenticación de los usuarios, manejo de roles, pasarela de pagos, creación de eventos, comprar tabla de bingo para jugar en un evento en tiempo real.",
+      platforms: ["Web"],
+      company: "Lio",
+      image: [],
+      technologies: [
+        "TypeScript",
+        "NestJs",
+        "Angular",
+        "Docker compose",
+        "Websocket",
+        "Redis",
+        "Stripe",
       ],
+      linkDemo: "",
+      linkGit: [],
+      updatedAt: "24/06/2025",
+      status: 'IN-PROGRESS',
+    },
+    {
+      name: "Gestión de campañas y donaciones de sangre",
+      description: "La aplicación permite autenticación con roles, gestión de usuarios, campañas, donantes y un sistema de notificaciones centralizado para mantener todo bajo control.",
       platforms: ["Web", "Mobile"],
       company: "Junta Provincial de El Oro de la ciudad de Machala",
       image: [
@@ -40,19 +54,12 @@ export class ProjectsService {
       linkDemo: "",
       linkGit: [
       ],
-      priority: true,
-      implemented: false,
       updatedAt: "01/10/2024",
+      status: 'COMPLETED',
     },
     {
-      name: "Mejora tu ingles con Glish Note",
-      description: [
-        "Login y registro",
-        "Contenido gramático básico",
-        "Traductor de google integrado",
-        "400 verbos para aprender",
-        "Gestión de notas y vocabulario",
-      ],
+      name: "Apuntes con Glish Note",
+      description: "Mejora tu inglés con Glish Note ofrece login y registro seguros, contenido de gramática básica, un traductor de Google integrado, 400 verbos esenciales para aprender y gestión de notas y vocabulario para un aprendizaje personalizado y eficiente.",
       platforms: ["Mobile"],
       company: "",
       image: [
@@ -69,19 +76,12 @@ export class ProjectsService {
       linkGit: [
         { name: "Proyecto", link: "https://github.com/Lio10jr/glish_note_app" }
       ],
-      priority: true,
-      implemented: false,
       updatedAt: "16/10/2024",
+      status: 'COMPLETED',
     },
     {
       name: "Gestión de campeonato de fútbol",
-      description: [
-        "Autenticación y roles",
-        "Gestion de campeonato",
-        "Vista pública web y móvil",
-        "Gestión de equipos, jugadores y más",
-        "Alertas via correo electrónico",
-      ],
+      description: "Permite autenticación con roles, gestión integral del campeonato, vista pública adaptable a web y móvil, administración de equipos, jugadores y más, además de alertas automáticas por correo electrónico.",
       platforms: ["Web", "Mobile"],
       company: "Universidad Tecnica de Machala",
       image: [
@@ -106,19 +106,12 @@ export class ProjectsService {
         { name: "Web", link: "https://github.com/Lio10jr/juegos-ti-frontend" },
         { name: "Móvil", link: "https://github.com/Lio10jr/juegostic_mv" }
       ],
-      priority: true,
-      implemented: false,
-      updatedAt: "01/10/2024"
+      updatedAt: "01/10/2024",
+      status: 'COMPLETED',
     },
     {
       name: "Gestión de de viajes para buses",
-      description: [
-        "Gestión de buses",
-        "Gestión de choferes",
-        "Gestión de tripulantes",
-        "Gestión de viajes",
-        "Reportes de viajes"
-      ],
+      description: "Ofrece gestión completa de buses, choferes, tripulantes y viajes, con generación de reportes detallados para un control operativo preciso y eficiente.",
       platforms: ["Web"],
       company: "",
       image: [
@@ -138,19 +131,12 @@ export class ProjectsService {
       linkGit: [
         { name: "", link: "https://github.com/Lio10jr/Compania-de-Buses" }
       ],
-      priority: true,
-      implemented: false,
       updatedAt: "01/10/2024",
+      status: 'COMPLETED',
     },
     {
       name: "Sistema de control de pacientes",
-      description: [
-        "Autenticación y roles",
-        "Gestión de recetas médicas",
-        "Gestión de paciente",
-        "Generación de recetas",
-        "Reportes con Crystal Reports"
-      ],
+      description: "Incluye autenticación con roles, gestión de pacientes y recetas médicas, generación automatizada de recetas y reportes profesionales mediante Crystal Reports para un control clínico efectivo.",
       platforms: ["Windows"],
       company: "",
       image: [
@@ -166,19 +152,12 @@ export class ProjectsService {
       linkGit: [
         { name: "", link: "https://github.com/Lio10jr/PatientControl" }
       ],
-      priority: false,
-      implemented: false,
       updatedAt: "01/10/2024",
+      status: 'COMPLETED',
     },
     {
       name: "Sistema para recicladoras orgánicas",
-      description: [
-        "Autenticación y roles de usuario",
-        "Gestión de reciclaje",
-        "Gestión de contenedores",
-        "Ventas de productos reciclables",
-        "Gestión web y móvil",
-      ],
+      description: "Ofrece autenticación con roles, gestión de reciclaje y contenedores, ventas de productos reciclables, y acceso completo desde plataformas web y móviles para un control ágil y sostenible.",
       platforms: ["Web", "Mobile"],
       company: "",
       image: [],
@@ -194,19 +173,12 @@ export class ProjectsService {
       linkGit: [
         { name: "", link: "https://github.com/Lio10jr/Recicladora" }
       ],
-      priority: false,
-      implemented: false,
-      updatedAt: "01/10/2024"
+      updatedAt: "01/10/2024",
+      status: 'COMPLETED',
     },
     {
       name: "Calculadora de métodos numéricos",
-      description: [
-        "Algoritmos de Bairstow y bisección",
-        "Algoritmos de derivadas y falsa posición.",
-        "Algoritmos de regresión.",
-        "Algoritmos de series de Taylor.",
-        "Gráficos de funciones.",
-      ],
+      description: "Integra algoritmos de Bairstow, bisección, derivadas, falsa posición, regresión y series de Taylor, junto con gráficos funcionales para análisis numérico avanzado y visualización clara.",
       platforms: ["Graphical interface"],
       company: "",
       image: [],
@@ -217,9 +189,8 @@ export class ProjectsService {
       linkGit: [
         { name: "", link: "https://github.com/Lio10jr/Metodos-Numericos-Calculator" }
       ],
-      priority: false,
-      implemented: false,
-      updatedAt: "01/10/2024"
+      updatedAt: "01/10/2024",
+      status: 'COMPLETED',
     }
   ];
 

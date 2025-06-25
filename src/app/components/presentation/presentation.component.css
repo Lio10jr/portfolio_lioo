@@ -1,8 +1,6 @@
 .presentation {
     width: 100%;
-    height: 100%;
-    background: #000000;
-    background: linear-gradient(90deg, var(--sb-thumb-color) 15%, black 18%);
+    height: 100%;    
 }
 
 .font-permanent {
