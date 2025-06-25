@@ -9,6 +9,11 @@
   font-style: normal;
 }
 
+.habilidades {
+    background: transparent;
+    background: linear-gradient(90deg, var(--sb-thumb-color) 50%, black 18%);
+}
+
 /* Buttons Contacts */
 .container {
     display: flex;

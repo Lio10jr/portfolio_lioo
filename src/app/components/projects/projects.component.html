@@ -1,7 +1,7 @@
 <div class="bg-black rounded-lg">
     <div id="indicators-carousel" class="relative w-full h-full" data-carousel="static">
         <div class="relative h-screen overflow-hidden rounded-lg">
-                <img class="absolute opacity-50 right-0 bottom-0 w-[80%] md:w-[50%]" src="./assets/profile/Lado sin fondo.webp" alt="Yo de Perfil">
+                <img class="absolute opacity-50 right-0 bottom-0 w-[80%] md:w-[50%]" ngSrc="./assets/profile/Lado sin fondo.webp" width="300"  height="300" alt="Yo de Perfil" loading="lazy">
                 <!-- Item -->
                 <div 
                     *ngFor="let project of projects; index as i;"
@@ -23,7 +23,8 @@
                                     <div class="w-full h-full grid-tailwind justify-start items-start grid gap-1 grid-cols-3 sm:grid-flow-col lg:grid-cols-6 place-items-start place-content-start">
                                         <div class="group w-20 h-20 rounded-md overflow-hidden relative border-solid border-white border-2"
                                             *ngFor="let image of project.image; index as index2">
-                                            <a [href]="image ? './assets/projects/' + image : './assets/projects/01.jpeg'"
+                                            <a  *ngIf="image !== ''"
+                                                [href]="'./assets/projects/' + image"
                                                 [class]="'img-' + index2"
                                                 [attr.data-title]="project.name || 'Project ' + i"
                                                 [attr.data-lightbox]="project.name">
@@ -41,8 +42,8 @@
                                                     </button>
                                                 </div>
                                                 <img class="rounded-lg w-full h-full object-cover"
-                                                    [src]="image ? './assets/projects/' + image : './assets/projects/01.jpeg'"
-                                                    [alt]="'img-' + i" />
+                                                    [ngSrc]="image ? './assets/projects/' + image : './assets/projects/01.jpeg'"
+                                                    [alt]="'img-' + i"  width="50"  height="50" loading="lazy" />
                                             </a>
                                         </div>
                                     </div>
